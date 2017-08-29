@@ -1,2 +1,2 @@
 # QtLua
-write Qt by lua
+#author huasmile
