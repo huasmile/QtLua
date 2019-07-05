@@ -1,0 +1,16 @@
+C++　Ｅｆｆｅｃｔｉｖｅ　ＳＴＬ
+
+条款1:判空empty代替size
+条款2:区间操作代替容器遍历操作
+条款3:new的指针必须delete删除
+条款4:因为指针所有权会被转让所以禁止使用auto_ptr
+
+
+empty()和size()==0用哪个判断容器为空？
+empty是常数时间，某些list实现size是线性时间。
+
+非关联容器如何用容器给另一个不同的容器初始化(元素类型相同)？
+container1.assign(container2.begin(),container1.end())
+
+如何把一个非关联容器追加给另一个非关联容器？
+std::copy(source.begin(), source.end(), back_inserter(dest));
